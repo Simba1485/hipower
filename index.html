@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Hi-Power Petroleum – LPG Marketing & Distribution</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Hi-Power Petroleum is an LPG marketing and distribution company providing safe, reliable LPG cylinders and bulk supplies for domestic, commercial, and industrial customers." />
+
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: Arial, sans-serif; line-height: 1.6; color: #e5e7eb; background: #020617; }
+    a { color: inherit; text-decoration: none; }
+    img { max-width: 100%; height: auto; display: block; }
+
+    header {
+      color: #e5e7eb;
+      padding: 24px 0 40px;
+      border-bottom: 1px solid #1f2937;
+      background:
+        linear-gradient(135deg, rgba(2,6,23,0.90), rgba(15,23,42,0.88)),
+        url("propane-storage-tank.jpg") center/cover no-repeat;
+      background-attachment: scroll;
+    }
+
+    .container { width: 90%; max-width: 1100px; margin: 0 auto; }
+    nav { display: flex; align-items: center; justify-content: space-between; margin-bottom: 24px; }
+    .logo { display: flex; align-items: center; }
+    .logo img { height: 40px; }
+
+    .nav-links a { margin-left: 16px; font-size: 0.95rem; color: #cbd5f5; }
+    .nav-links a:hover { text-decoration: underline; }
+
+    .hero { display: grid; grid-template-columns: 1.3fr 1fr; gap: 32px; align-items: center; }
+    .hero h1 { font-size: 2.2rem; margin-bottom: 12px; }
+    .hero p { margin-bottom: 16px; max-width: 520px; color: #d1d5db; }
+    .badge { display: inline-block; padding: 4px 10px; border-radius: 999px; border: 1px solid #334155; font-size: 0.8rem; margin-bottom: 10px; background: rgba(15,23,42,0.6); }
+
+    .hero-buttons { margin-top: 8px; display: flex; flex-wrap: wrap; gap: 10px; }
+    .btn { display: inline-block; padding: 10px 18px; border-radius: 4px; font-size: 0.95rem; cursor: pointer; border: 1px solid transparent; }
+    .btn-primary { background: #facc15; color: #111827; }
+    .btn-outline { background: transparent; border-color: #475569; color: #e5e7eb; }
+
+    .hero-highlight { background: rgba(15,23,42,0.8); padding: 12px 14px; border-radius: 6px; margin-top: 12px; font-size: 0.9rem; color: #e5e7eb; border: 1px solid #1f2937; }
+    .hero-right { background: rgba(15,23,42,0.95); padding: 18px; border-radius: 8px; font-size: 0.9rem; border: 1px solid #1f2937; }
+
+    section { padding: 40px 0; background: #020617; }
+    h2.section-title { font-size: 1.6rem; margin-bottom: 8px; text-align: center; color: #e5e7eb; }
+    p.section-subtitle { font-size: 0.95rem; color: #9ca3af; text-align: center; margin-bottom: 24px; }
+
+    .two-col { display: grid; grid-template-columns: repeat(2, 1fr); gap: 32px; align-items: flex-start; }
+
+    .pill-list { list-style: none; display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px; }
+    .pill-list li { background: #0f172a; border-radius: 999px; padding: 5px 12px; font-size: 0.85rem; color: #cbd5f5; border: 1px solid #1f2937; }
+
+    .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-top: 8px; }
+    .card { background: #020617; border-radius: 8px; padding: 16px; box-shadow: 0 2px 8px rgba(0,0,0,0.5); border: 1px solid #1f2937; }
+    .card h3 { font-size: 1rem; margin-bottom: 6px; color: #e5e7eb; }
+    .card p { font-size: 0.9rem; color: #9ca3af; }
+
+    .metrics { display: flex; flex-wrap: wrap; gap: 16px; margin-top: 10px; }
+    .metric { flex: 1 1 130px; }
+    .metric strong { display: block; font-size: 1.1rem; color: #38bdf8; }
+
+    .list { list-style: none; font-size: 0.95rem; color: #cbd5f5; }
+    .list li { margin-bottom: 6px; padding-left: 16px; position: relative; }
+    .list li::before { content: "•"; position: absolute; left: 0; top: 0; color: #38bdf8; }
+
+    .contact-grid { display: grid; grid-template-columns: 1.1fr 1fr; gap: 28px; }
+    .contact-box { background: #020617; border-radius: 8px; padding: 18px; box-shadow: 0 1px 6px rgba(0,0,0,0.5); border: 1px solid #1f2937; }
+    .contact-box h3 { margin-bottom: 10px; font-size: 1.05rem; color: #e5e7eb; }
+    .contact-box p { font-size: 0.9rem; margin-bottom: 6px; color: #d1d5db; }
+
+    footer { background: #020617; color: #6b7280; padding: 18px 0; font-size: 0.85rem; border-top: 1px solid #1f2937; }
+    footer .footer-inner { display: flex; flex-wrap: wrap; gap: 12px; justify-content: space-between; align-items: center; }
+    footer a { color: #9ca3af; }
+
+    @media (max-width: 900px) {
+      .hero { grid-template-columns: 1fr; }
+      .two-col, .cards, .contact-grid { grid-template-columns: 1fr; }
+      nav { flex-direction: column; align-items: flex-start; gap: 8px; }
+      .nav-links { font-size: 0.9rem; margin-top: 8px; }
+    }
+  </style>
+</head>
+<body>
+
+<header id="top">
+  <div class="container">
+    <nav>
+      <div class="logo">
+        <img src="hpp-logo.png" alt="Hi-Power Petroleum Logo">
+      </div>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#areas">Service Areas</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+
+    <div class="hero">
+      <div>
+        <div class="badge">OGRA-compliant LPG solutions</div>
+        <h1>Safe, Reliable LPG for Homes, Businesses &amp; Industry</h1>
+        <p>
+          Hi-Power Petroleum is an LPG marketing and distribution company supplying quality LPG cylinders and bulk solutions with a focus on safety, reliability, and prompt delivery.
+        </p>
+        <div class="hero-buttons">
+          <a href="#contact" class="btn btn-primary">Contact by Email</a>
+          <a href="#contact" class="btn btn-outline">View Office &amp; Site</a>
+        </div>
+        <div class="hero-highlight">
+          Serving selected areas in Lahore and surrounding regions with OGRA-approved cylinders, accessories, and doorstep delivery for domestic and commercial customers.
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <h3>Quick Order Details</h3>
+        <p>When you contact us, please share:</p>
+        <ul class="list">
+          <li>Location and preferred delivery time.</li>
+          <li>Cylinder size (e.g., 11.8 kg / 45.4 kg) and quantity.</li>
+          <li>New connection or refill, and any accessories required.</li>
+        </ul>
+        <p style="margin-top: 8px; font-size: 0.85rem; color: #9ca3af;">
+          LPG supplied at notified prices, plus applicable delivery and security charges as per company policy.
+        </p>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section id="about">
+  <div class="container two-col">
+    <div>
+      <h2 class="section-title" style="text-align:left;">About Hi-Power Petroleum</h2>
+      <p style="margin: 10px 0 12px; color:#d1d5db;">
+        Hi-Power Petroleum is focused on delivering dependable LPG energy solutions to domestic, commercial, and industrial consumers through a controlled supply chain and trained teams.
+      </p>
+      <p style="margin-bottom: 8px; font-size:0.95rem; color:#9ca3af;">
+        From sourcing to storage, filling, and distribution, every step follows LPG safety guidelines to help ensure consistent product quality and secure operations for our customers.
+      </p>
+      <ul class="pill-list">
+        <li>Domestic &amp; commercial LPG</li>
+        <li>Industrial &amp; bulk supply</li>
+        <li>Doorstep delivery</li>
+        <li>Compliant cylinders</li>
+        <li>Safety-first operations</li>
+      </ul>
+    </div>
+
+    <div>
+      <h3 style="font-size:1.05rem; margin-bottom:8px; color:#e5e7eb;">Our focus areas</h3>
+      <ul class="list">
+        <li>Reliable LPG supply through secure sourcing and storage infrastructure.</li>
+        <li>Adherence to LPG safety and handling standards.</li>
+        <li>On-time deliveries supported by a coordinated logistics network.</li>
+        <li>Customer support that guides safe usage and best practices.</li>
+      </ul>
+
+      <div class="metrics">
+        <div class="metric">
+          <strong>Multi‑segment</strong>
+          <span>Serving homes, restaurants, commercial kitchens, and industry.</span>
+        </div>
+        <div class="metric">
+          <strong>Safety</strong>
+          <span>Operational procedures aligned with LPG safety guidelines.</span>
+        </div>
+        <div class="metric">
+          <strong>Coverage</strong>
+          <span>Growing footprint in Lahore and Sheikhupura region.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="services">
+  <div class="container">
+    <h2 class="section-title">LPG Services</h2>
+    <p class="section-subtitle">
+      Flexible LPG solutions for household, commercial, and industrial users, with both cylinder and bulk options.
+    </p>
+
+    <div class="cards">
+      <div class="card">
+        <h3>Domestic Cylinders</h3>
+        <p>
+          Home‑use LPG cylinders for cooking and heating, delivered to your doorstep with safety checks and basic installation guidance.
+        </p>
+      </div>
+      <div class="card">
+        <h3>Commercial &amp; Hospitality</h3>
+        <p>
+          Reliable supply plans for restaurants, tandoors, bakeries, hotels, and caterers to support uninterrupted kitchen operations.
+        </p>
+      </div>
+      <div class="card">
+        <h3>Industrial &amp; Bulk</h3>
+        <p>
+          Tailored LPG supply solutions for industrial clients, including larger cylinders or bulk arrangements where permitted.
+        </p>
+      </div>
+      <div class="card">
+        <h3>Accessories &amp; Safety</h3>
+        <p>
+          Cylinders, regulators, hoses, and safety guidance to promote secure LPG usage at customer premises.
+        </p>
+      </div>
+      <div class="card">
+        <h3>Distributor &amp; Dealer Network</h3>
+        <p>
+          Growing network of distributors and resellers to improve availability and service coverage in key locations.
+        </p>
+      </div>
+      <div class="card">
+        <h3>Custom Supply Plans</h3>
+        <p>
+          Volume-based supply planning, scheduled deliveries, and support for commercial and industrial energy requirements.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="areas">
+  <div class="container two-col">
+    <div>
+      <h2 class="section-title" style="text-align:left;">Service Areas</h2>
+      <p style="margin: 10px 0 12px; color:#d1d5db;">
+        Hi-Power Petroleum is building a presence across Lahore and selected nearby regions, including parts of District Sheikhupura.
+      </p>
+      <ul class="list">
+        <li>Lahore urban and selected surrounding areas.</li>
+        <li>Salamat Pura Road Rakhbouli, Tehsil Muridkay, District Sheikhupura.</li>
+        <li>Planned expansion to additional towns and industrial clusters (subject to regulatory approvals).</li>
+      </ul>
+    </div>
+    <div>
+      <h3 style="font-size:1.05rem; margin-bottom:8px; color:#e5e7eb;">Check availability for your location</h3>
+      <p style="font-size:0.9rem; margin-bottom:8px; color:#9ca3af;">
+        Share your complete address and requirement by email so our team can confirm service availability, delivery options, and lead time for your area.
+      </p>
+      <p style="font-size:0.9rem; color:#9ca3af;">
+        For areas outside current coverage, our team can guide you on the nearest distributor or evaluate possible inclusion in the route plan.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="container">
+    <h2 class="section-title">Contact &amp; Locations</h2>
+    <p class="section-subtitle">
+      Reach out by email for LPG orders, commercial supply discussions, or operational queries.
+    </p>
+
+    <div class="contact-grid">
+      <div class="contact-box">
+        <h3>Corporate Office</h3>
+        <p><strong>Office:</strong> FF1 Peshawar Block, Fortress Stadium, Cantt Lahore</p>
+        <p><strong>E-mail:</strong> HiPowerPetroleum@gmail.com</p>
+        <p style="margin-top:10px; font-size:0.9rem;">
+          Please mention your name, address, cylinder size, and required quantity when writing to us so we can respond efficiently.
+        </p>
+      </div>
+
+      <div class="contact-box">
+        <h3>Plant / Site Location</h3>
+        <p><strong>Site:</strong> Salamat Pura Road Rakhbouli, Tehsil Muridkay, District Sheikhupura</p>
+        <p style="font-size:0.9rem; margin-top:6px;">
+          This site supports LPG handling, filling, and distribution operations to serve customers in Lahore and Sheikhupura region, subject to applicable approvals and company policies.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container footer-inner">
+    <span>© <span id="year"></span> Hi-Power Petroleum. All rights reserved.</span>
+    <a href="#top">Back to top ↑</a>
+  </div>
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
